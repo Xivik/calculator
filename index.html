@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div id="calculator">
+  <form id="calc" class="calcForm">
+    <input id="disp1" type=text name="calcDisplay" class="display" value="" /> 
+    <div id="resultScreen"></div><br>
+    <button class="btn50" onclick="clearAll()"> C </button>
+    <button class="btn25" onclick="clearLast()"> CE </button>
+    <button class="btn25 btnFinal" onclick="divide()"> / </button> <br>
+
+    <button value="7" class="btn25" onclick="addNum(value)"> 7 </button>
+    <button value="8" class="btn25" onclick="addNum(value)"> 8 </button>
+    <button value="9" class="btn25" onclick="addNum(value)"> 9 </button>
+    <button class="btn25 btnFinal" onclick="multiply()"> x </button> <br>
+
+    <button value="4" class="btn25" onclick="addNum(value)"> 4 </button>
+    <button value="5" class="btn25" onclick="addNum(value)"> 5 </button>
+    <button value="6" class="btn25" onclick="addNum(value)"> 6 </button>
+    <button class="btn25 btnFinal" onclick="subtract()"> - </button> <br>
+
+    <button value="1" class="btn25" onclick="addNum(value)"> 1 </button>
+    <button value="2" class="btn25" onclick="addNum(value)"> 2 </button>
+    <button value="3" class="btn25" onclick="addNum(value)"> 3 </button>
+    <button class="btn25 btnFinal" onclick="add()"> + </button> <br>
+
+    <button value="." class="btn25" onclick="addNum(value)"> . </button>
+    <button value="0" class="btn25" onclick="addNum(value)"> 0 </button>
+    <button class="btn50 btnFinal" onclick="calcResult()"> = </button> <br>
+  </form>
+</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
