@@ -38,10 +38,11 @@ const divideCalc = function() {
     storedInput = parseFloat(storedInput);
     firstInput = parseFloat(firstInput);
     result = storedInput / firstInput;
+    result.toFixed(20);
     result = result.toString();
     storedInput = result;
     firstInput = "";
-    document.getElementById("resultScreen").innerHTML = "Result: " + result;
+    document.getElementById("resultScreen").innerHTML = result;
   }
 };
 
@@ -61,10 +62,11 @@ const multiplyCalc = function() {
     storedInput = parseFloat(storedInput);
     firstInput = parseFloat(firstInput);
     result = storedInput * firstInput;
+    result.toFixed(20);
     result = result.toString();
     storedInput = result;
     firstInput = "";
-    document.getElementById("resultScreen").innerHTML = "Result: " + result;
+    document.getElementById("resultScreen").innerHTML = result;
   }
 };
 
@@ -85,10 +87,11 @@ const subtractCalc = function() {
     storedInput = parseFloat(storedInput);
     firstInput = parseFloat(firstInput);
     result = storedInput - firstInput;
+    result.toFixed(20);
     result = result.toString();
     storedInput = result;
     firstInput = "";
-    document.getElementById("resultScreen").innerHTML = "Result: " + result;
+    document.getElementById("resultScreen").innerHTML = result;
   }
  
 };
@@ -108,10 +111,11 @@ const addCalc = function() {
     storedInput = parseFloat(storedInput);
     firstInput = parseFloat(firstInput);
     result = storedInput + firstInput;
+    result.toFixed(20);
     result = result.toString();
     storedInput = result;
     firstInput = "";
-    document.getElementById("resultScreen").innerHTML = "Result: " + result;
+    document.getElementById("resultScreen").innerHTML = result;
   }
 };
 
