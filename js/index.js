@@ -37,12 +37,12 @@ const divideCalc = function() {
   if(storedInput !== "" && firstInput !== "") {
     storedInput = parseFloat(storedInput);
     firstInput = parseFloat(firstInput);
+    result = storedInput / firstInput;
+    result = result.toString();
+    storedInput = result;
+    firstInput = "";
+    document.getElementById("resultScreen").innerHTML = "Result: " + result;
   }
-  result = storedInput / firstInput;
-  result = result.toString();
-  storedInput = result;
-  firstInput = "";
-  document.getElementById("resultScreen").innerHTML = "Result: " + result;
 };
 
 const multiply = function() {
@@ -60,12 +60,12 @@ const multiplyCalc = function() {
   if(storedInput !== "" && firstInput !== "") {
     storedInput = parseFloat(storedInput);
     firstInput = parseFloat(firstInput);
+    result = storedInput * firstInput;
+    result = result.toString();
+    storedInput = result;
+    firstInput = "";
+    document.getElementById("resultScreen").innerHTML = "Result: " + result;
   }
-  result = storedInput * firstInput;
-  result = result.toString();
-  storedInput = result;
-  firstInput = "";
-  document.getElementById("resultScreen").innerHTML = "Result: " + result;
 };
 
 const subtract = function() {
@@ -84,12 +84,13 @@ const subtractCalc = function() {
   if(storedInput !== "" && firstInput !== "") {
     storedInput = parseFloat(storedInput);
     firstInput = parseFloat(firstInput);
+    result = storedInput - firstInput;
+    result = result.toString();
+    storedInput = result;
+    firstInput = "";
+    document.getElementById("resultScreen").innerHTML = "Result: " + result;
   }
-  result = storedInput - firstInput;
-  result = result.toString();
-  storedInput = result;
-  firstInput = "";
-  document.getElementById("resultScreen").innerHTML = "Result: " + result;
+ 
 };
 const add = function() {
   if(storedInput === ""){
@@ -106,12 +107,12 @@ const addCalc = function() {
   if(storedInput !== "" && firstInput !== "") {
     storedInput = parseFloat(storedInput);
     firstInput = parseFloat(firstInput);
+    result = storedInput + firstInput;
+    result = result.toString();
+    storedInput = result;
+    firstInput = "";
+    document.getElementById("resultScreen").innerHTML = "Result: " + result;
   }
-  result = storedInput + firstInput;
-  result = result.toString();
-  storedInput = result;
-  firstInput = "";
-  document.getElementById("resultScreen").innerHTML = "Result: " + result;
 };
 
 const clearAll = function() {
