@@ -1,11 +1,10 @@
 
-function check_focus() {
+(function check_focus() {
   if (document.hasFocus() == true) {
   } else {
     window.focus();
   }
-}
-check_focus();
+})();
 
 const form = document.getElementById("calc");
 form.addEventListener("submit", function(e) {
